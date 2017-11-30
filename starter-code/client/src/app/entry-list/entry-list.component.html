@@ -5,5 +5,6 @@
     <p> {{ e.title }} </p>
     <p> {{ e.date }} </p>
     <p> {{ e.content }} </p>
+    <a [routerLink]="['entry', e._id]">Entry Details</a>
   </div>
 </div>

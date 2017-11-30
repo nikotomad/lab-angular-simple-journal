@@ -13,4 +13,8 @@ export class JournalserviceService {
     .map(res => res.json());
   }
 
+  getSingleEntry(id):Observable<any> {
+    return this.http.get(`http://localhost:3000/api/journal-entries/${id}`)
+    .map(res => res.json());
+  }
 }
